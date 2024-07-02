@@ -1,0 +1,6 @@
+.env
+*.log
+*.exe
+*.conf
+*.bak
+*.7z
