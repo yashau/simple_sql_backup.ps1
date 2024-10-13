@@ -1,6 +1,6 @@
 # simple_sql_backup.ps1
 
-A comprehensive PowerShell script designed to back up one or more MSSQL databases on a Windows host, compress them, and upload them to an S3-compatible provider of your choice. It also includes support for Telegram notifications.
+A comprehensive PowerShell script designed to back up one or more MSSQL databases on a Windows host, compress them, and upload them to an S3-compatible provider or SMB share of your choice. It also includes support for Telegram notifications.
 
 This script leverages the following open-source projects:
 - Microsoft's [SqlServer PowerShell Module](https://github.com/microsoft/SQLServerPSModule)
@@ -14,6 +14,7 @@ This script leverages the following open-source projects:
 - Support for both SQL and Windows authentication
 - Utilizes [ZStandard](https://github.com/facebook/zstd) at Level 1 for an optimal balance of compression speed and storage efficiency
 - Uploads to any S3-compatible storage provider
+- Uploads to any SMB share
 - Windows Task Scheduler Safe™ thanks to robust error-checking
 - Comprehensive logging to file and alerting via Telegram
 - dotenv configuration management
